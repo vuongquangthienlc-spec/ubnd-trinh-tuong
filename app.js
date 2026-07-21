@@ -1,0 +1,1 @@
+document.querySelectorAll('.grid a').forEach(a=>a.target='_blank');setInterval(()=>clock.textContent=new Date().toLocaleString('vi-VN'),1000);search.oninput=()=>document.querySelectorAll('.grid a').forEach(a=>a.style.display=a.innerText.toLowerCase().includes(search.value.toLowerCase())?'flex':'none');top.onclick=()=>scrollTo({top:0,behavior:'smooth'});
